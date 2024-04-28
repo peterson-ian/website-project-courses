@@ -1,0 +1,325 @@
+:root{
+    --main-backgroud-color: #2C2C2C;
+    --secondary-backgroud-color: #444444;
+    --font-color-on-bg: white;
+    --footer-color: #1b1b1b;
+}
+
+*{
+    text-decoration: none;
+}
+
+
+
+body, body > *{
+    background-color: var(--main-backgroud-color);
+    margin: auto !important;
+}
+
+.container-content{
+    max-width: 2000px !important;
+    margin: auto !important;
+}
+
+.navbar{
+    width: 100% !important;
+}
+
+.navbar-brand{
+    color: var(--font-color-on-bg);
+    padding: 1.2rem;
+}
+
+.logo-tittle{
+    font-size: 1.4rem !important;
+    text-transform: uppercase;
+}
+
+.banner-container{
+    margin: 1.4rem !important;
+    border-radius: 24px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-responsive{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--font-color-on-bg);
+}
+
+.banner-tittle{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner-text{
+    font-size: 1rem;
+}
+
+.container-subtittle{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1.4rem;
+    color: var(--font-color-on-bg);
+}
+
+.container-cards{
+    margin: 1.4rem;
+}
+
+.course-card{
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0 !important;
+    transition: .3s ease all;
+}
+
+.course-card img{
+    transition: .3s ease all;
+}
+
+.course-card:hover {
+  cursor: pointer;
+}
+
+.course-card:hover img{
+    scale: 1.1;
+}
+
+.shadow-inner {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)) !important;
+}
+
+.card-text {
+    position: absolute;
+    top: 85%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -80%);
+    text-align: center;
+    color: var(--font-color-on-bg); 
+    font-weight: 800;
+    z-index: 2;
+    width: 100%;
+}
+
+.name-course{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.button-buy {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(253, 254, 255);
+    border: 2px solid rgb(67, 104, 206);
+    border-radius: 34px;
+    background-color: rgb(67, 104, 206);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button-buy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(23, 42, 95);
+
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button-buy:hover::before {
+    scale: 3;
+
+  }
+  
+  .button-buy:hover {
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    border: 2px solid rgb(23, 42, 95);
+
+  }
+  
+  .button-buy:active {
+    scale: 1;
+  }
+
+.card-professor {
+  text-align: center;
+    color: var(--font-color-on-bg);
+    font-size: 1.2rem;
+    width: 85%;
+    background-color: var(--secondary-backgroud-color);
+    border-radius: 25px;
+    position: relative;
+}
+  
+.img-professor{
+    width: 80%;
+    height: 270px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    top: -25px;
+}
+
+.img-professor img{
+    transition: .3s ease all;
+}
+
+.img-professor:hover img{
+    scale: 1.15;
+}
+
+.info-professor{
+    margin: auto;
+}
+
+  
+.container-professors{
+    margin: 3rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.card-professor:hover {
+  cursor: pointer;
+}
+
+
+
+.card-socialmedia {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.container-fotter{
+  background-color: var(--footer-color);
+  color: var(--font-color-on-bg );
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: white;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: white;
+}
